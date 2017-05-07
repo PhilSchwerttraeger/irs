@@ -1,0 +1,84 @@
+﻿Licence and Copyright
+=====================
+
+IRS (Image Resize System) - Copyright 2017 Philipp Schwetschenau.
+Licenced under the GPLv3.
+
+This file is part of IRS (Image Resize System).
+
+IRS is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+IRS is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with IRS.  If not, see <http://www.gnu.org/licenses/>.
+
+What is IRS (Image Resize System)
+=================================
+
+IRS is a small peace of code written in PHP and designed to resize
+images (also referred as creating thumbnails).
+
+What images types are supported
+===============================
+
+As of now IRS support GIF, JPG, PNG and BMP.
+
+How does IRS work
+=================
+
+IRS reads all original images from the source directory and
+writes the resized images in the target directoy.
+
+IRS checks if the source images already exist in the target
+directory and if the height and width matches the expected values.
+
+If not IRS overwrites the existing images in the target directory.
+Otherwise it skips those files.
+
+Height and width of the target images can be configured as well 
+as preserving of the aspect ratio.
+
+If source images are deleted from the source directory IRS will 
+delete the target images from the target directory the next time
+it is executed.
+
+How IRS can be configured
+=========================
+
+Directly in irs.php source and target directory can be configured.
+
+Width and height of the target images can be hardcoded in irs.php
+too, but can also be manually set via the user interface. If only
+height or width are hardcoded irs.php will automatically set the
+corresponding value according to the aspect ratio of the image, as
+long as preserving of the aspect ratio is set to true. This also 
+applies if the values are set manually in the user interface.
+
+If height and width are hardcoded in irs.php the values can´t be
+set in the user interface.
+
+A prefix can be configured for the target images. By default it is
+set as 'tmb'.
+
+By default height and width are expected to be in a range between
+1 and 5000 pixel (min/max). This can be configured in irs.php too.
+
+Last but not least a screen output of the resize transactions can
+be enabled or disabled. By default it is set to 'false'.
+
+List of files shipped with IRS
+==============================
+
+irs.php - program logic, user interface
+irs_alternateStyling.php - program logic, differently styled user interface
+css/main.css - stylesheet for the user interface
+COPYING - GPLv3 licence 
+README - the document you are reading
+

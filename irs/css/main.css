@@ -1,0 +1,58 @@
+/*
+IRS (Image Resize System) - Copyright 2017 Philipp Schwetschenau.
+Licenced under the GPLv3.
+
+This file is part of IRS (Image Resize System).
+
+IRS is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+IRS is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with IRS.  If not, see <http://www.gnu.org/licenses/>.
+*/
+body {
+	text-align: center;
+	color: #333333;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	background: #f4f4f4;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#colorized {background-color: #efefef;}
+
+table td {
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+}
+
+input[type=text],
+input[type=number] {
+	-webkit-appearance: button;
+	-webkit-border-radius: 2px;
+	-webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+	-webkit-padding-end: 20px;
+	-webkit-padding-start: 2px;
+	background-position: 97% center;
+	background-repeat: no-repeat;
+	border: 1px solid #AAA;
+	color: #555;
+	font-size: inherit;
+	margin: 10px;
+	overflow: hidden;
+	padding: 3px 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
